@@ -1,0 +1,10 @@
+@model Department
+<h1>Add a Department</h1>
+<form action="addDepartment" method="post">
+    <div class="form-group">
+        <label for="Name">Department Name</label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Add Department" class="btn btn-danger">
+</form>
